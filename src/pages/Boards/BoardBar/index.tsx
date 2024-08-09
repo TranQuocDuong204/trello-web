@@ -11,7 +11,7 @@ const BoardBar: FC = () => {
         alignItems: "center",
       }}
     >
-      Board bar
+      Board bar duong
     </Box>
   );
 };

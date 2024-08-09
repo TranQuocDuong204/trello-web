@@ -35,8 +35,21 @@ const theme = extendTheme({
   },
   spacing: (factor: number): string => `${0.25 * factor}rem`,
   trello: {
-    appBarHeight: "48px",
+    appBarHeight: "58px",
     boardBarHeight: "56px",
+  },
+
+  components: {
+    // Name of the component
+    MuiButton: {
+      styleOverrides: {
+        // Name of the slot
+        root: {
+          // Some CSS
+          textTransform: "none",
+        },
+      },
+    },
   },
 });
 
